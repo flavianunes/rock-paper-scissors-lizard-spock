@@ -53,6 +53,19 @@ body {
 
     .result {
         display: flex;
+        align-content: center;
+        justify-content: space-between;
+        margin-bottom: 5em;
+        .iconUser, .iconMachine {
+            font-size: 5em;
+
+        }
+        .vs {
+            margin: 0;
+            font-size: 5em;
+            color: $green;
+        }
     }
 
 }
+

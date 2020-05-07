@@ -1,10 +1,8 @@
-import React, { useEffect, useState } from 'react';  
+import React  from 'react';  
 import { FaHandSpock, FaHandScissors, FaHandRock, FaHandLizard, FaHandPaper } from "react-icons/fa";
 import Button from './Button'
 
-
-
-const Result = ({userOption, machineOption, setResult, setOptions}) => {
+const Result = ({userOption, machineOption, setResult, setOptions, setMessage}) => {
 
     const iconsUser = {
         'scissors': false,
@@ -29,15 +27,15 @@ const Result = ({userOption, machineOption, setResult, setOptions}) => {
     return <>
     <div className="result">
     
-        <div>
+        <div className="iconUser">
             {iconsUser['scissors'] && <FaHandScissors/>}
             {iconsUser['rock'] && <FaHandRock/>}
             {iconsUser['paper'] && <FaHandPaper/>}
             {iconsUser['lizard'] && <FaHandLizard/>}
             {iconsUser['spock'] && <FaHandSpock/>}
         </div>     
-        <p>vs</p> 
-        <div>
+        <p className="vs">x</p> 
+        <div  className="iconMachine">
             {iconsMachine['scissors'] && <FaHandScissors/>}
             {iconsMachine['rock'] && <FaHandRock/>}
             {iconsMachine['paper'] && <FaHandPaper/>}
@@ -46,7 +44,7 @@ const Result = ({userOption, machineOption, setResult, setOptions}) => {
         </div>
 
     </div>
-    <Button onClick={() => {setResult(false); setOptions(true)}} text='play again' icon='FaPlay'/>
+    <Button onClick={() => {setResult(false); setOptions(true); setMessage('Pick one and let's play!')}} text='play again' icon='FaPlay'/>
     </>
 }
 

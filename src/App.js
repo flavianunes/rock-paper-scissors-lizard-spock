@@ -30,7 +30,7 @@ function App() {
       <Score score = {score} />
     </header>
     <Instructions msg = {message} />
-    {showResult && <Result userOption = {userOption} machineOption={machineOption} setOptions = {setOptions} setResult = {setResult}/>}
+    {showResult && <Result userOption = {userOption} machineOption={machineOption} setOptions = {setOptions} setResult = {setResult} setMessage = {setMessage}/>}
     {showOptions && <Options options={options} props={props}/>}
    
    </main>
