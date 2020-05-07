@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaHandSpock, FaHandScissors, FaHandRock, FaHandLizard, FaHandPaper } from "react-icons/fa";
+import { FaHandSpock, FaHandScissors, FaHandRock, FaHandLizard, FaHandPaper, FaPlay } from "react-icons/fa";
 
 import '../styles/Button.scss';
 
@@ -10,7 +10,8 @@ const Button = ({onClick, icon, text}) => {
         'FaHandScissors': false,
         'FaHandRock': false,
         'FaHandLizard': false,
-        'FaHandPaper': false
+        'FaHandPaper': false,
+        'FaPlay': false
     }
     icons[icon] = true;
 
@@ -20,7 +21,7 @@ const Button = ({onClick, icon, text}) => {
         {icons['FaHandRock'] && <FaHandRock />}
         {icons['FaHandLizard'] && <FaHandLizard />}
         {icons['FaHandPaper'] && <FaHandPaper />}
-
+        {icons['FaPlay'] && <FaPlay />}
     </button>
 }
 
