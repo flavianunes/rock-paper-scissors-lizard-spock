@@ -19,4 +19,8 @@ $repeat: 5;
     svg {
         font-size: 40px;
     }
+
+    &:hover {
+        cursor: pointer;
+    }
 }

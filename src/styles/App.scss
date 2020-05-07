@@ -48,7 +48,8 @@ body {
     }
 
     .instructions {
-        font-size: 2em;
+        font-size: 1.5em;
+        text-transform: uppercase;
     }
 
     .result {
@@ -64,6 +65,23 @@ body {
             margin: 0;
             font-size: 5em;
             color: $green;
+        }
+    }
+
+    .tutorial-btn {
+        margin-top: 2em;
+        border-radius: 20px;
+        background-color: transparent;
+        padding: .8em .6em;
+        font-size: 1.5em;
+        border: 2px solid $green;
+        color: $green;
+        cursor: pointer;
+        background-color: $blue;
+        
+
+        &:hover, &:active, &:focus {
+            filter: brightness(80%)
         }
     }
 

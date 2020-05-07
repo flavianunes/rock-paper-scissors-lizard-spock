@@ -5,7 +5,7 @@ import Button from './Button';
 
 const Options = ({options, props}) => {
 
-    return <div className='option'>
+    return <><div className='option'>
 
       <Button onClick={() => play(options[0], options[getMachineOption()], props)} icon = 'FaHandRock' text= "rock" /> 
 
@@ -17,7 +17,9 @@ const Options = ({options, props}) => {
 
       <Button onClick={() => play(options[4], options[getMachineOption()], props)} icon = 'FaHandSpock' text= "spock" />
 
-    </div>;
+    </div>     
+    <button className="tutorial-btn">Learn how to play</button>
+</>;
 }
 
 export default Options;
