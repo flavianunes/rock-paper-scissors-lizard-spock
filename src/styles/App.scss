@@ -1,0 +1,58 @@
+@import './vars';
+
+body {
+    background-color: $blue;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+
+}
+
+.container {
+    max-width: 500px;
+    margin: auto;
+    padding: 1em;
+
+    header {
+
+        display: flex;
+        justify-content: space-between;
+
+        h1 {
+            font-weight: lighter;
+            text-transform: uppercase;
+            text-align: left;
+            font-size: 1em;
+            border: 1px solid $white;
+
+            padding: .5em;
+            width: 90px;
+        }
+
+        .score {
+            background-color: $white;
+            color: $blue;
+            align-self: center;
+            padding: .8em;
+            label {
+                text-transform: uppercase;
+                font-weight: bold;
+                display: block;
+            }
+            .score-number {
+                font-family: monospace;
+                font-size: 3em;
+                align-self: center;
+            }
+        }
+    }
+
+    .instructions {
+        font-size: 2em;
+    }
+
+    .result {
+        display: flex;
+    }
+
+}
