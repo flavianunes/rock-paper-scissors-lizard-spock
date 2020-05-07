@@ -44,7 +44,7 @@ const Result = ({userOption, machineOption, setResult, setOptions, setMessage}) 
         </div>
 
     </div>
-    <Button onClick={() => {setResult(false); setOptions(true); setMessage('Pick one and let's play!')}} text='play again' icon='FaPlay'/>
+    <Button onClick={() => {setResult(false); setOptions(true); setMessage(`Pick one and let's play!`)}} text='play again' icon='FaPlay'/>
     </>
 }
 
